@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/10715cfae1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="img/logo.png">
+
+</head>
+
+<body>
+    <!----hero Section start---->
+
+    <div class="hero">
+
+        <nav id="header">
+            <h2 class="logo">Say My Name</h2>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#services">My Services</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="content" id="home">
+            <h4>Hello World, i'm </h4>
+            <h1>Pritam <span>Karki</span></h1>
+            <h3>I'm a intermediate <span class="typing"> </span></h3>
+            <div class="newslatter">
+                <a href="#"><button class="home-btn">More about me</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!----About section start---->
+    <section class="about" id="about">
+        <div class="main">
+            <img src="img/my.jpg">
+            <div class="about-text">
+                <h2>About <span>Me</span></h2>
+                <h5>Developer & <span class="about-span"></span></h5>
+                <p>I'm a front-end web developer. I'm still in high school, studying in grade XI. I'm a part time freelancer and also a intermediate level video editor. I can provide you some help with your new upcomming projects including html, css and
+                    video editing. I usually use templates according the projects and modify it as new as possible. So feel free to contact.</p>
+                <a href="www.facebook.com"><button type="button">Send a message</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-----service section start----------->
+    <div class="service" id="services">
+        <div class="title">
+            <h2>My <span>Services</span></h2>
+        </div>
+
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-pen-fancy"></i>
+                <h5>Frontend Designing</h5>
+                <div class="pra">
+                    <p>I will provide your website a fine and clean front design</p>
+
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Hire Me</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-database"></i>
+                <h5>Backend Designing</h5>
+                <div class="pra">
+                    <p>I will provide a clean and safe backend for your websites </p>
+
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Hire Me</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-file-video"></i>
+                <h5>Video Editing</h5>
+                <div class="pra">
+                    <p>I will edit anythin, you would threw at me :)</p>
+
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Hire Me</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------Contact Me------>
+    <div class="contact-me">
+        <p>Send your nudes here</p>
+        <a class="button-two" href="#">Send Nudes</a>
+    </div>
+
+    <!------footer start--------->
+    <footer>
+        <p>It's Pritam</p>
+        <p>Stay with us for more updates</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+        </div>
+
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed(".typing", {
+        strings: ["Web Developer", "Video Editor", "Web Developer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    })
+    var typed1 = new Typed(".about-span", {
+        strings: [" Designer", "Creator", "Designer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    })
+
+    function scrollHeader() {
+        const header = document.getElementById('header')
+        if (this.scrollY >= 80) header.classList.add('scroll-nav');
+        else header.classList.remove('scroll-nav')
+    }
+    window.addEventListener('scroll', scrollHeader)
+</script>
+
+</html>
